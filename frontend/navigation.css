@@ -1,0 +1,15 @@
+nav{
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+}
+
+li{
+    list-style: none !important;
+    word-wrap: normal;
+    font-size: 15px;
+    font-size-adjust: inherit;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

@@ -1,15 +1,36 @@
-nav{
+.navigation-bar{
     display: flex;
     gap: 20px;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-direction: column;
+    padding: 30px 20 auto;
+    border:  10px solid var(--navigation-);
+    border-radius: 10px;
 
+   
 }
-
 li{
     list-style: none !important;
     word-wrap: normal;
     font-size: 15px;
     font-size-adjust: inherit;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: ease;
+    transition-delay:  0s;      
+    
 }
+
+
+
+.navigation-bar:hover{
+    transform: translateX(-20px);
+}
+
+
+
+.about-html{
+    transition: all ease 0s;
+    
+}
+
+
+

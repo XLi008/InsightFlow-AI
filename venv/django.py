@@ -1,13 +1,5 @@
-import pandas
-import numpy
-import sklearn
+import pandas as pd
+import xgboost as xgb
+import tensorflow as tf
 
 
-
-
-data = pandas.DataFrame(None)
-
-if not isinstance:
-    then_data = data 
-
-    # P/E=\frac{\text{Share price}}{\text{Earnings per share}}

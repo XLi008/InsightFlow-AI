@@ -3,10 +3,10 @@ import matplotlib as plt
 import yfinance
 import xgboost as xgb
 import yfinance as yt
+from sklearn.model_selection import train_test_split
 
-data = pd.read_csv("indexData.csv", index_col=0)
 
-data.head()
+
 
 user = input("Choose a Stock Symbol: ")
 

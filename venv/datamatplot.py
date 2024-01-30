@@ -2,6 +2,7 @@ import pandas as pd
 import matplotlib as plt
 import yfinance
 import xgboost as xgb
+from xgboost import linear_gradient
 import yfinance as yt
 from sklearn.model_selection import train_test_split
 

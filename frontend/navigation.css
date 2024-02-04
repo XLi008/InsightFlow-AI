@@ -1,35 +1,14 @@
-.navigation-bar{
-    display: flex;
-    gap: 2px;
-    flex-direction: column;
-    padding: 30px 20 auto;
-    border:  10px solid var(--navigation-);
-    border-radius: 10px;
-    
-
-   
-}
 li{
-    list-style: none !important;
-    word-wrap: normal;
-    font-size: 15px;
-    font-size-adjust: inherit;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    list-style: none;
 }
 
-
-
-.navigation-bar:hover{
-    transform: translateX(-20px);
-}
-
-
-
-.about-html{
-    transition: all ease 0s transform;
-    padding: 25px 35px;
-    background: #142d4c;
+div{
+    width: min(100% - 2rem);
+    font-family: Cambria, Cochin, 
+    Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    align-items: center;
+    font: green;
 
 }
-
 

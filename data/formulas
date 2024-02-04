@@ -1,1 +1,2 @@
 brownian motion:  Xt=X0expμ−12σ2t+σWt
+Y_i=f(X_i, \beta)+e_i

@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import yfinance
 import xgboost as xgb
 import yfinance as yt
+import csv as cs
 
 user = input("Choose a Stock Symbol: ")
 
@@ -20,3 +21,7 @@ def plot(user):
 
 
 plot(stock)
+
+c
+
+

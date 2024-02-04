@@ -1,14 +1,13 @@
 li{
     list-style: none;
-}
-
-div{
-    width: min(100% - 2rem);
-    font-family: Cambria, Cochin, 
-    Georgia, Times, 'Times New Roman', serif;
     display: flex;
+    gap: 2px;
     align-items: center;
-    font: green;
-
+    text-align: center;
+    
 }
 
+
+.lists{
+    display: block;
+}

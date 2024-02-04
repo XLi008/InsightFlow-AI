@@ -2,12 +2,12 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import yfinance
 import xgboost as xgb
-import yfinance as yt
+import yfinance as yf
 import csv as cs
 
 user = input("Choose a Stock Symbol: ")
 
-stock = yfinance.download(user, start='2000-01-01', end='2024-01-01')
+stock = yf.download(user, start='2000-01-01', end='2024-01-01')
 
 
 
@@ -25,9 +25,6 @@ plot(stock)
 
 def csv_yfinance():
     pass    
-
-
-
 
 #Psuedocode:
 # We need to create a csv file and save it to a user sql database to ensure that a user can

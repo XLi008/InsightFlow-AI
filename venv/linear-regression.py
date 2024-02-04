@@ -22,6 +22,15 @@ def plot(user):
 
 plot(stock)
 
-c
 
+def csv_yfinance():
+    pass    
+
+
+
+
+#Psuedocode:
+# We need to create a csv file and save it to a user sql database to ensure that a user can
+# access their past history and we'll export the history through userentry.sql so for
+#csv_yfinance: we need to create a CSV file and save it to a user sql database
 

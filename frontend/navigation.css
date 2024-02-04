@@ -10,3 +10,8 @@ li{
 .lists{
     display: block;
 }
+
+.lists:not(.button) li:hover,
+.lists a:hover::after {
+    color: #ccc;
+}

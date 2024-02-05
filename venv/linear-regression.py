@@ -23,9 +23,9 @@ plot(stock)
 
 
 def csv_yfinance(user):
-    apple = yf.Ticker(stock)
-    dividends = apple.dividends
-    splits = apple.splits
+    stock = yf.Ticker(stock)
+    dividends = stock.dividends
+    splits = stock.splits
 
 
 

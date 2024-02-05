@@ -14,10 +14,10 @@ li{
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    transition: ease-in 5s green infinite;
     
 }
 
-.lists:not(.button) li:hover,
-.lists a:hover::after {
+.lists:hover {
     color: #ccc;
 }

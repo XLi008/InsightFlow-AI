@@ -8,8 +8,7 @@ import csv as cs
 user = input("Choose a Stock Symbol: ")
 
 stock = yf.download(user, start='2000-01-01', end='2024-01-01')
-
-
+z
 
 def plot(user):
     plt.figure()
@@ -23,9 +22,15 @@ def plot(user):
 plot(stock)
 
 
-def csv_yfinance():
-    pass    
+def csv_yfinance(user):
+    apple = yf.Ticker(stock)
+    dividends = apple.dividends
+    splits = apple.splits
 
+
+
+
+csv_yfinance(stock)
 #Psuedocode:
 # We need to create a csv file and save it to a user sql database to ensure that a user can
 # access their past history and we'll export the history through userentry.sql so for

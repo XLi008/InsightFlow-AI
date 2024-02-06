@@ -17,7 +17,13 @@ console.log(sentence + " You have " +" " +(total_length) + " words left")
 
 
 if (total_length <= 0) {
-  console.log("RAN OUT OF WORDS")
+  console.log("RAN OUT OF WORDS");
 } 
 
 
+for (let i = 0; i < 5; i++) {
+
+  const arrays = [2 * 2]; 
+}
+
+console.log(arrays);

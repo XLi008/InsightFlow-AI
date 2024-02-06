@@ -28,7 +28,7 @@ def linear_regression_model(stock):
 def csv_yfinance(user):
     stock = yf.Ticker(stock)
     dividends = stock.dividends
-    splits = stock.splits
+    
 
 
 

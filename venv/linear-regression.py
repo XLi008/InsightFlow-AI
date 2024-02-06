@@ -30,6 +30,7 @@ def csv_yfinance(user):
 
 
 
+
 csv_yfinance(stock)
 #Psuedocode:
 # We need to create a csv file and save it to a user sql database to ensure that a user can

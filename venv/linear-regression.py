@@ -2,6 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import yfinance
 import xgboost as xgb
+from xgboost import XGBRegressor
 import yfinance as yf
 import csv as cs
 
@@ -19,7 +20,9 @@ def plot(user):
     plt.show()
 
 
-plot(stock)
+def linear_regression_model(stock):
+    x_model, y_model = xgb.XGBRegressor(stock)
+
 
 
 def csv_yfinance(user):
@@ -29,6 +32,7 @@ def csv_yfinance(user):
 
 
 
+plot(stock)
 
 
 csv_yfinance(stock)

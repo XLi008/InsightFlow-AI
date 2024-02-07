@@ -1,9 +1,9 @@
 
-var myName = prompt("Name: ");
+var myName = prompt("Name: ").capitalize();
 var myfavorite_game = prompt("Video Game:");
 
 
-sentence = (myName + " and my favorite game is: " + myfavorite_game);
+sentence = (myName + " and my favorite game is: " + myfavorite_game).toLowerCase();
 
 
 

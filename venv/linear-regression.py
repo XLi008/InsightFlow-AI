@@ -20,14 +20,14 @@ def plot(user):
     plt.show()
 
 
-def linear_regression_model(stock):
-    x_model, y_model = xgb.XGBRegressor(stock)
-
-
 
 def csv_yfinance(user):
     stock = yf.Ticker(stock)
     dividends = stock.dividends
+
+def linear_regression_model(stock):
+    x_model, y_model = xgb.XGBRegressor(stock)
+
     
 
 

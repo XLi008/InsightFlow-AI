@@ -20,10 +20,19 @@ if (total_length <= 0) {
   console.log("RAN OUT OF WORDS");
 } 
 
+function array(){
+  for (let i = 0; i < 5; i++) {
 
-for (let i = 0; i < 5; i++) {
+  var arrays = [2 * 2];
+    
+  if(arrays.length > 0){
+      array = [2 + 3 && 3 ** 2, 4* 2], log(32);
+  
 
-  const arrays = [2 * 2]; 
+  }
+ return array;
+    }
 }
+
 
 console.log(arrays);

@@ -13,7 +13,7 @@ user = input("Choose a Stock Symbol: ")
 
 def plot(user):
     plt.figure()
-    plt.plot(stock)
+    plt.plot(user)
     plt.title(f"{user} Stock over Time")
     plt.xlabel("Date")
     plt.ylabel("Price")

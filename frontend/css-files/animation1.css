@@ -1,0 +1,12 @@
+:root{
+    overflow: hidden;
+}
+
+
+h1{
+    -webkit-animation: forwards;
+    animation: fire infinte ease;
+
+}
+
+

@@ -6,6 +6,7 @@ from xgboost import XGBRegressor
 import yfinance as yf
 import csv as cs
 
+
 user = input("Choose a Stock Symbol: ")
 
 stock = yf.download(user, start='2000-01-01', end='2024-01-01')
@@ -25,8 +26,10 @@ def csv_yfinance(user):
     stock = yf.Ticker(stock)
     dividends = stock.dividends
 
+
 def linear_regression_model(stock):
     x_model, y_model = xgb.XGBRegressor(stock)
+
 
     
 

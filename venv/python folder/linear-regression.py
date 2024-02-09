@@ -7,7 +7,9 @@ import yfinance as yf
 import csv as cs
 
 
-user = input("Choose a Stock Symbol: ")
+stock = input("Choose a Stock Symbol: ")
+
+user =  yfinance.ticker(stock, start='2000-01-01', end='2024-01-01')
 
 
 
@@ -23,8 +25,9 @@ def plot(user):
 
 def csv_yfinance(user):
     X_training  = user[['Open', 'High', 'Low', 'Volume']]  
-    Y_training =  user[[]]
-
+    Y_training =  user['Close']
+    pand = pd.DataFrame(X_training,Y_training)
+    return pand
 
 
 
@@ -37,10 +40,10 @@ def linear_regression_model(stock):
 
 
 
-plot(stock)
+plot(csv_yfinance(user))
 
 
-csv_yfinance(stock)
+csv_yfinance(user)
 #Psuedocode:
 # We need to create a csv file and save it to a user sql database to ensure that a user can
 # access their past history and we'll export the history through userentry.sql so for

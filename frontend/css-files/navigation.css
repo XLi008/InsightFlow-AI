@@ -1,22 +1,13 @@
 li{
     list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
+    display: inline-flex;
+    margin: 50px;
+
     
 }
 
 
-.lists{
-    display: block;
-    list-style: none;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    transition: ease-in 5s green infinite;
-    
-}
+
 
 .lists:hover {
     color: #ccc;

@@ -1,7 +1,9 @@
-li{
+.ul{
     list-style: none;
     display: inline-flex;
-    margin: 50px;
+    margin: 0 20px;
+    font-size: 20px;
+ 
 
     
 }

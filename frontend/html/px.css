@@ -3,3 +3,20 @@
 @tailwind variants;
 
 
+
+html{
+    background: image();
+    font-size: 75% 2rem;
+
+}
+
+.lists ul{
+    @apply text-2xl font-sarif  
+    underline shadowlg text-slate-800 capitalize font-thin  
+    text-grey-200 rounded bg-slate-400 flex items-center 
+    hover: bg-slate-900 ease-in rounded[0.6px] px-12 mx-12
+} 
+
+.nav_bar{
+    @apply flex items-center justify-between flex-wrap bg-teal-500 p-6 hover: bg-slate-900 rounded-md
+}

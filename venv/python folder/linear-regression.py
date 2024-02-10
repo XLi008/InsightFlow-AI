@@ -2,24 +2,15 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import yfinance
 import xgboost as xgb
-from xgboost import XGBRegressor
 import yfinance as yf
 import csv as cs
 
 
 stock = input("Choose a Stock Symbol: ")
 
-user =  yfinance.ticker(stock, start='2000-01-01', end='2024-01-01')
+user =  yfinance.download(stock, start='2000-01-01', end='2024-01-01')
 
 
-
-def plot(user):
-    plt.figure()
-    plt.plot(user)
-    plt.title(f"{user} Stock over Time")
-    plt.xlabel("Date")
-    plt.ylabel("Price")
-    plt.show()
 
 
 
@@ -28,6 +19,14 @@ def csv_yfinance(user):
     Y_training =  user['Close']
     pand = pd.DataFrame(X_training,Y_training)
     return pand
+
+def plot(user):
+    plt.figure()
+    plt.plot(user)
+    plt.title(f"{user} Stock over Time")
+    plt.xlabel("Date")
+    plt.ylabel("Price")
+    plt.show()
 
 
 

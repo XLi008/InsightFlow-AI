@@ -1,21 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind variants;
-
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Libre+Baskerville:ital@1&family=Protest+Guerrilla&display=swap');
 
 
 html{
-    font-size: 75% 2rem;
-
+    font-size: 65%;
+    scroll-behavior: smooth;
+    @apply bg-slate-700;
 }
 
-.lists ul{
-    @apply text-2xl font-sarif  
-    underline shadowlg text-slate-800 capitalize font-thin  
-    text-grey-200 rounded bg-slate-400 flex items-center 
-    hover: bg-slate-900 ease-in rounded[0.6px] px-12 mx-12
-} 
-
-.nav_bar{
-    @apply flex items-center justify-between flex-wrap bg-teal-500 p-6 hover: bg-slate-900 rounded-md
+li{
+    list-style: none;
+    font-size: 25px;
+    font-family: "Caveat", sans-serif;
+}
+.lists nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2px;
 }

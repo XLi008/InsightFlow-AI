@@ -17,6 +17,7 @@ user =  yfinance.download(stock, start='2000-01-01', end='2024-01-01')
 def training(user):
     X_training  = user[['Open', 'High', 'Low', 'Volume']]  
     Y_training =  user['Close']
+    
     return X_training, Y_training
 
 

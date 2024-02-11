@@ -7,7 +7,7 @@
 html{
     font-size: 65%;
     scroll-behavior: smooth;
-    @apply bg-slate-700;
+    background: image();
 }
 
 li{
@@ -16,9 +16,9 @@ li{
     font-family: "Caveat", sans-serif;
 }
 .lists nav{
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 2px;
+    justify-content: center;
+    gap: 20px;
 }

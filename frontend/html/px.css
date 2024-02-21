@@ -57,9 +57,9 @@ ul {
 .nav a:hover {
     color: aqua;
     border: 2px solid aquamarine;
-    border-radius: 30px aquamarine; 
+    border-radius: 30px 30px 30px 30px;
+    align-items: center;
     padding: 2px 25px 35%;
-    transition: ease-in all;
+    background-color:  #187123;
 }
-
 

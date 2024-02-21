@@ -54,11 +54,12 @@ ul {
 }
 
 
-.nav a:hover{
+.nav a:hover {
     color: aqua;
-    border-radius: 45% solid ;
-    background-color: aquamarine;
-
+    border: 2px solid aquamarine;
+    border-radius: 30px aquamarine; 
+    padding: 2px 25px 35%;
+    transition: ease-in all;
 }
 
 

@@ -7,7 +7,7 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    transition:  all ease 1s;
+    transition: 1s all ease-in;
 }
 
 body{
@@ -79,26 +79,15 @@ img{
     background-color: #187123;
 }
 
-img{
-    position: relative;
-    opacity: 1;
-    transition: 1s all ease-in;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-    gap: 10px;
-    height: 200px;
-    width: 200px;
-    border-radius: 30px 30px 30px 30px;
-    transform: translate(0, 50%);
 
-}
-
-
-img:hover{
-    background: #187123;
-    background-color: #187123;
-    transform: scale(1.1) #187123;
-    opacity: 1;
+@keyframes transitionIn{
+    from{
+        
+        opacity: 0;
+    }
+    to{
+        transition: 0.5 all ease-in;
+        opacity: 1;
+        
+    }
 }

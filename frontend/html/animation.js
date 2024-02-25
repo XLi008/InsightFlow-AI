@@ -1,2 +1,3 @@
-var animation  = addEventListener()
+alert("Hello");
 
+document.querySelector("li").innerHTML = "Hello Mafakas";

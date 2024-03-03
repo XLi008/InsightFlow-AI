@@ -10,14 +10,18 @@
     transition: 1s all ease-in;
 }
 
+
+
 body{
     height: 100vh;
+    background: linear-gradient(#0D0E0F,  #2E5EE5)
 
 
 }
-.start{
-    background: #DCDFDA;
-}
+
+
+
+
 
 ul {
     position: fixed;
@@ -59,6 +63,24 @@ ul {
 }
 
 
+.container{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 150px;
+    left: 350px;
+
+}
+
+
+.container h1{
+    color: linear-gradient(
+        
+    );
+    font-size: 45px;
+}
 .nav a{
     color:white;
     transition: all 0.5s ease-in;
@@ -69,9 +91,10 @@ ul {
     transform: translateY(-25px);
     align-items: center;
     padding: 2px;
-    background: #83E88A;
+    color: #83E88A;
     border-radius: 30px 30px 30px 30px;
     transition: 0.6s;
 }
+
 
 

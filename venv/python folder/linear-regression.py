@@ -1,54 +1,25 @@
-import pandas as pd
-import matplotlib.pyplot as plt
-import yfinance
-import xgboost as xgb
+
+# Alternative solution 
+# s1 import the libiraries 
 import yfinance as yf
-import csv as cs
+import matplotlib.pyplot as plt
+from sklearn.linear_model import LinearRegression
 
+# s2 Fetch stock data 
+stock_data = yf.download('AAPL', start='2020-01-01', end='2021-01-01', progress=False)
 
-stock = input("Choose a Stock Symbol: ")
+# s3 Prepare your X and y
+X = stock_data['Close'].values.reshape(-1, 1)
+y = stock_data['Close'].shift(-1).dropna().values
 
-user =  yfinance.download(stock, start='2000-01-01', end='2024-01-01')
+# s4 Train the data with suitable model
+model = LinearRegression()
+model.fit(X, y)
 
-
-
-
-
-def training(user):
-    X_training  = user[['Open', 'High', 'Low', 'Volume']]  
-    Y_training =  user['Close']
-    
-    return X_training, Y_training
-
-
-def plot(user):
-    plt.figure()
-    plt.plot(user)
-    plt.title(f"{user} Stock over Time")
-    plt.xlabel("Date")
-    plt.ylabel("Price")
-    plt.show()
-
-
-
-
-def linear_regression_model(stock):
-    x_model, y_model = xgb.XGBRegressor(stock)
-
-
-    
-
-
-
-data = training(user)
-plot_data = plot(data)
-
-plot_data(data)
-
-
-#Psuedocode:
-# We need to create a csv file and save it to a user sql database to ensure that a user can
-# access their past history and we'll export the history through userentry.sql so for
-#csv_yfinance: we need to create a CSV file and save it to a user sql database
-
-
+# Analyse the results 
+plt.scatter(X, y, color='blue')
+plt.plot(X, model.predict(X), color='red')
+plt.xlabel('Date')
+plt.ylabel('Closing Price')
+plt.title('Linear Regression - AAPL Stock')
+plt.show()
